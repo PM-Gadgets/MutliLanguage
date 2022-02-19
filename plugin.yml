@@ -1,0 +1,8 @@
+name: MultiLanguage
+description: Create languages and translate text at ease.
+authors:
+  - Cosmic5173
+version: 1.0.0
+api: 4.0.0
+load: STARTUP
+main: Cosmic5173\MultiLanguage\MultiLanguageHandler
