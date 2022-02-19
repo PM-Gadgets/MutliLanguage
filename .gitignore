@@ -1,0 +1,5 @@
+# Jetbrains Folder
+/.idea/
+
+# PHAR Build Script
+Build.php
