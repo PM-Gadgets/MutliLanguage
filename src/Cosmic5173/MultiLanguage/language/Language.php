@@ -192,6 +192,16 @@ abstract class Language {
     public abstract function getID(): string;
 
     /**
+     * Get the language source version.
+     * Returns null if a language source has not been loaded.
+     * @return string|null
+     */
+    public function getVersion(): ?string
+    {
+        return $this->version;
+    }
+
+    /**
      * Get the languages override source link.
      * @return string|null
      */

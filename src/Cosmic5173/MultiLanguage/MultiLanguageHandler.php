@@ -72,7 +72,7 @@ final class MultiLanguageHandler extends PluginBase {
             $this->sourceUrl = $sourceUrl;
             $this->registered = true;
 
-            $plugin->getScheduler()->scheduleDelayedTask(new UpdateLanguageSource(), $updateInterval*20);
+            if ($updateInterval !== -1) $plugin->getScheduler()->scheduleDelayedTask(new UpdateLanguageSource(), $updateInterval*20);
         } else {
             throw new \RuntimeException("Library is already registered.");
         }
