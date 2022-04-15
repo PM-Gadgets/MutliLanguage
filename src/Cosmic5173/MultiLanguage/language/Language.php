@@ -143,6 +143,15 @@ abstract class Language {
     }
 
     /**
+     * Check to see is a specific translation exists in the language source.
+     * @param string $translationName
+     * @return bool
+     */
+    public function hasTranslation(string $translationName): bool {
+        return isset($this->translations[$translationName]);
+    }
+
+    /**
      * Check for language source file updates.
      * @internal
      *
